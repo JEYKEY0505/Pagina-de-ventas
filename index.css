@@ -1,6 +1,6 @@
 ﻿body{
     width: 100vw;
-    height: 100vh ;
+    height: 100% ;
     margin: 0;
     background-image: linear-gradient(to right bottom,#FF00CC ,#33FFFF);
     background-repeat: no-repeat;
@@ -47,6 +47,9 @@ font-family: 'Yellowtail', cursive;
     color: white;
     text-decoration: none;
 }
+.menu ul li{
+ margin: 10px 0px;
+}
 .menu ul{
     list-style: none;
     padding: 0;
@@ -59,4 +62,54 @@ font-family: 'Yellowtail', cursive;
 }
 .menu:hover ul, ul:hover{
     display: block;
+}
+
+.menu ul li:hover {
+    text-decoration: underline;
+}
+.main{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-title{
+    color: white;
+    font-size: 1.3em;
+}
+.main-input{
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 35px;
+    padding: 1px 20px;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+.carousel{
+    width: 100vw;
+    padding: 30px;
+}
+.carousel-container{
+    display: flex;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+.carousel-item{
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: white;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.carousel-item:hover {
+    transform: translate3d(100px, 0, 0);
+
 }
